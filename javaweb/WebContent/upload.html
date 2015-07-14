@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>上傳文件</title>
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<body>
+						<!--enctype為二進位傳輸檔案 ，預設為application/x-www-form-urlencoded為ASCII
+							像伺服器發送資料會導致失敗-->
+ 	<form action="javaweb/UploadServlet" method="post" enctype="multipart/form-data"> 
+ 	<div align="center"><br/>
+		<fieldset style="width:90%">
+			<legend>上傳檔案</legend><br/>
+			
+			<div class='line'>
+				<div align='left' class="leftDiv">上傳檔案一</div>
+				<div align='left' class="rightDiv">
+					<input type="file" name="file1" class="text">
+				</div>
+			</div>
+			
+			<div class='line'>
+				<div align='left' class="leftDiv">上傳檔案二</div>
+				<div align='left' class="rightDiv">
+					<input type="file" name="file1" class="text">
+				</div>
+			</div>
+			
+			<div class='line'>
+				<div align='left' class="leftDiv">上傳檔案說明一</div>
+				<div align='left' class="rightDiv">
+					<input type="text" name="description1" class="text">
+				</div>
+			</div>
+			
+			<div class='line'>
+				<div align='left' class="leftDiv">上傳檔案說明二</div>
+				<div align='left' class="rightDiv">
+					<input type="text" name="description2" class="text">
+				</div>
+			</div>
+			
+			<div class='line'>
+				<div align='left' class="leftDiv"></div>
+				<div align='left' class="rightDiv"><br/>
+					<input type="submit" value="上傳檔案" class="button">
+				</div>
+			</div>
+		</fieldset>
+	</div>
+	</form>
+</body>
+</html>
